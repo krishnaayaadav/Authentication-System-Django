@@ -1,0 +1,41 @@
+/* Body style */
+body{
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+   
+}
+
+/* form container style */
+
+.form-container{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+h2{
+    margin: 0px 0px 10px 0px ;
+}
+
+/* input fields and errors style */
+input{
+    width: 250px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+input[type='submit']{
+    background-color: #3498db;
+    color: white;
+    border: 0px solid ;
+    border-radius: 21px;
+    margin-top: 12px;
+}
+
+.errorlist{
+    list-style: none;
+}

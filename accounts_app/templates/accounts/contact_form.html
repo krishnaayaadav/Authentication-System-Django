@@ -1,0 +1,31 @@
+{% extends "accounts/base.html" %}
+{% load static %}
+
+{% block title %}
+Contact
+{% endblock title %}
+
+{% block form %}
+
+<div class="form-container">
+    <form action="" method="post" novalidate>
+      <h2>Contact Form</h2>
+        {% csrf_token %}
+        
+        <!-- form non field errors here --->
+        {% if form.non_field_errors %}
+         <p class='errorlist'>{{form.non_field_errors}}</p>
+        {% endif %}
+
+        <!--- extracting form field/inputs  --->
+        {% for fm in  form %}
+          {{fm.label_tag}}
+          {{fm}}
+          {{fm.errors}} <br>
+        {% endfor %}
+
+        <input type="submit"  value='Contact' class='btn btn-sm btn-primary'>
+    </form>
+</div>
+
+{% endblock form %}

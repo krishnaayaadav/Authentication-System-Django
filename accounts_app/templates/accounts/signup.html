@@ -1,0 +1,32 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+{% block title %}
+Signup
+{% endblock title %}
+
+
+{% block form %}
+
+<div class="form-container" name='signupform' >
+
+    <form class='cetr' method="post">
+      <h2>Create an account</h2>
+
+        {% csrf_token %}
+
+        {% if form.non_field_errors %}
+        <p class='errorlist'>{{form.non_field_errors}} </p>
+        {% endif %}
+
+        {% for fm in form %}
+          {{fm.label_tag}}
+          {{fm}} <br>
+          {% if fm.errors %}
+            <p class='errorlist'>{{fm.errors}}</p>
+          {% endif %} 
+        {% endfor %}
+        <input type="submit" value='Signup' id='signupbtn'>
+    </form>
+</div>
+
+{% endblock form %}

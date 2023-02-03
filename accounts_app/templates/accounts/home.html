@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <h2>Welcome {{request.user.username}} </h2>
+
+    <!-- Module level permision checking --->
+    {% if perms.accounts_app %}
+
+    
+
+    <!--- checking weather current user  have view(see data) permision  or not  --->
+
+    {% if perms.accounts_app.view_blog %}
+    
+        {% for blog in  all_blogs %}
+            {{blog.id}}  
+            {{blog.title}}
+            {{blog.desc}} <br>
+        {% endfor %}
+    
+    {% else %}
+    <h2>Sorry! you don't have permision to view blog instance</h2>
+    {% endif %}
+
+
+   
+   <!-- weather current user can have add blog permision or not --->
+   {% if perms.accounts_app.add_blog %}
+    
+   <h2>Add blogs
+        <H2>Yes {{request.user.username}} has permision to add blog instance</H2>
+    </h2>
+
+    {% else %}
+    <H2>No {{request.user.username}} has permision to no permision to add blog</H2>
+    </h2>
+   {% endif %}
+
+
+   {% else %}
+   <h2>You don't have any permission in account module</h2>
+
+   {% endif %}
+   
+
+
+
+   
+    
+</body>
+</html>

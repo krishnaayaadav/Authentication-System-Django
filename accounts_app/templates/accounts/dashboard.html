@@ -1,0 +1,14 @@
+{% extends "accounts/base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+Dashboard
+{% endblock title %}
+
+{% block main_content %}
+
+<h2 class='alert alert-outline-primary' >{{request.user|capfirst}}</h2>
+
+{% endblock main_content %}

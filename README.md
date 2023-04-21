@@ -15,4 +15,6 @@ A Authentication and Authorization is applied using Django like sign-up,login,ch
 • After Validation only user can perform above CRUD Operation and Only Update the data that user is entered
 only. Delete permission is not given to any User. Only Admin can perform delete operations
 • Tech-Stacks: Python,Django(MVT, ORM),HTML,CSS,JavaScript, Database: MySQL,
-Deployed:Python-Anywhere Live-Project:  https://krishnayadv.pythonanywhere.com/accounts/login/
+
+
+Deployed:Python-Anywhere Live-Project: http://authentication.pythonanywhere.com/

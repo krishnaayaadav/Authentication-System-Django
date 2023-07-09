@@ -1,8 +1,5 @@
 
-![signup1](https://user-images.githubusercontent.com/123397686/219567922-7d99e4c1-86c0-485d-802f-23b70081a403.jpg)
-![login](https://user-images.githubusercontent.com/123397686/219568542-c88da10c-087c-489d-929c-3a84cc86195c.jpg)
-![Screenshot 2023-02-16 183543](https://user-images.githubusercontent.com/123397686/219568121-ece00d3f-0121-45f6-b3e0-154e592e550c.jpg)
-![Screenshot 2023-02-16 190956](https://user-images.githubusercontent.com/123397686/219569170-aacb7942-e87f-495c-bc38-fb1367495def.jpg)
+![authentication_system](https://github.com/krishnapb01/Authentication-System-Django/assets/123397686/76526e05-55d7-4e81-be84-7541926789b3)
 
 
 # Authentication-system-Django
@@ -17,4 +14,4 @@ only. Delete permission is not given to any User. Only Admin can perform delete 
 • Tech-Stacks: Python,Django(MVT, ORM),HTML,CSS,JavaScript, Database: MySQL,
 
 
-Deployed:Python-Anywhere Live-Project: http://authentication.pythonanywhere.com/
+Deployed:Python-Anywhere Live-Project: https://usersauthentication.pythonanywhere.com/accounts/
